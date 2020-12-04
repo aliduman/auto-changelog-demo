@@ -7,7 +7,7 @@ Initialize Project
 `npm run init`
 
 #### Do Fake Release Before Changelog
-In second command you have to increase version number for future releases. Do Not Forget!!!!!!!!!!!
+In second command you have to increase version number for future releases.
 ```
 npm run release 0.0.1 && npm run version 0.0.2 
 ```
