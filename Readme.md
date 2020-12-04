@@ -1,6 +1,6 @@
 # Auto Change Log Generator Demo
 
-#### Fork and Init Your Project
+#### Download Code and Init Your Project
 Initialize Libraries
 `npm install`
 Initialize Project
