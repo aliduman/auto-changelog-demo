@@ -26,7 +26,7 @@ git commit -m "break: bla bla breaking error fixed"
 ```
 
 #### Example Scenario
-Make any changes in project.
-Commit your changes with formats.
-Do fake release
-Push project
+    - Make any changes in project.
+    - Commit your changes with formats.
+    - Do fake release
+    - Push project
