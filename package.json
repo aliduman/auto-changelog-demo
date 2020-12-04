@@ -1,0 +1,34 @@
+{
+  "name": "auto-changelog-demo",
+  "version": "0.0.1",
+  "description": "Demo project for understanding how to generate auto changelog file and how we should send commits.",
+  "main": "index.js",
+  "scripts": {
+    "init": "git init && git add . && git commit -m 'feature: Project Initialized' && git checkout -b develop",
+    "changelog": "auto-changelog -p",
+    "changelog-with-template": "auto-changelog --template changelog-template.hbs -p -u --commit-limit false",
+    "changelog-debug": "auto-changelog --template changelog-template.hbs -p --template json --output changelog-data.json",
+    "change-version": "npm version",
+    "release": "./release.sh",
+    "push": "npm run changelog-with-template && git add . && git commit -m 'feature: Changelog Changed' && git push",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mehmet Ali Karadeniz",
+  "license": "ISC",
+  "auto-changelog": {
+    "commitLimit": false,
+    "unreleased": true,
+    "replaceText": {
+      "[Ff]eature:": "",
+      "[Ff]ix:": "",
+      "[Bb]reak:": ""
+    },
+    "includeBranch": [
+      "develop",
+      "master"
+    ]
+  },
+  "devDependencies": {
+    "auto-changelog": "^2.2.1"
+  }
+}
