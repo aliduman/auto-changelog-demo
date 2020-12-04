@@ -8,7 +8,7 @@ versionLabel=v$1
 
 # establish branch and tag name variables
 devBranch=develop
-masterBranch=master
+masterBranch=main
 releaseBranch=release-$versionLabel
  
 # create the release branch from the -develop branch
